@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+     <title>Land marchandise | KITAB</title>
+
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    <link rel="preload" as="image" href="images/carouselbg.png">
+   <link rel="stylesheet" href="style/style.css?v=2">
+    <link rel="stylesheet" href="style/testimonial.css?v=2">
+    <link rel="stylesheet" href="style/loader.css?v=2">
+
+    <style>
+        .info-section {
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        .custom-list li {
+            list-style: none;
+            margin-left: 0;
+            padding-left: 1.8em;
+            background-image: url("svg/Image.svg");
+            background-repeat: no-repeat;
+            background-size: 16px 16px;
+            background-position: 0 5px;
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- modals  -->
+    <div class="modal fade" id="propertyModal1" tabindex="-1" aria-labelledby="propertyModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="propertyModalLabel">Waterfront Property Opportunity</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Introducing a rare opportunity! We present the first sea-view property on the mainland,
+                        strategically located opposite Banana Island and adjacent to the Third Mainland Bridge. This
+                        prime property offers:</p>
+                    <ul>
+                        <li>Breathtaking sea views</li>
+                        <li>Commercial and residential development potential</li>
+                        <li>Boat access for added convenience and luxury</li>
+                    </ul>
+                    <p><strong>Pricing:</strong></p>
+                    <ul>
+                        <li>1 acre: ₦750,000,000</li>
+                        <li>1 hectare: ₦1,950,000,000</li>
+                        <li>Available only in Acre & Hectare</li>
+                        <li>Affordable and Negotiable</li>
+                        <li>We have over 3 hectares available for sale.</li>
+                        <li>4 installment payment for 1–2 Hectares</li>
+                    </ul>
+                    <p>Get in touch to explore this exceptional opportunity!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="iberekodoModal" tabindex="-1" aria-labelledby="iberekodoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="iberekodoModalLabel">Prime Land Opportunity in Iberekodo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Invest in a prime property with immense growth potential!</h6>
+                    <p>We present a unique land opportunity in Iberekodo, strategically located:</p>
+                    <ul>
+                        <li>Opposite NNPC Gas Station</li>
+                        <li>Beside Eleganza Estate</li>
+                        <li>Behind Amen Estates</li>
+                        <li>Directly on Lekki-Epe Expressway, Lagos</li>
+                    </ul>
+
+                    <h6>Key Features:</h6>
+                    <ul>
+                        <li><strong>Land Size:</strong> Available in hectares only, perfect for large-scale developments
+                        </li>
+                        <li><strong>Location:</strong> Close proximity to major landmarks and infrastructure, ensuring
+                            easy accessibility and high visibility</li>
+                        <li><strong>Potential:</strong> Ideal for commercial, industrial, or residential projects, given
+                            its strategic location</li>
+                    </ul>
+
+                    <h6>Benefits:</h6>
+                    <ul>
+                        <li>High potential for appreciation in value</li>
+                        <li>Excellent connectivity to major roads and infrastructure</li>
+                        <li>Suitable for various development projects</li>
+                    </ul>
+
+                    <p><strong>Don't miss this opportunity!</strong> Contact us today to schedule a viewing and make
+                        this prime land yours!</p>
+
+                    <p><strong>Price:</strong> Competitive rates available for serious buyers.</p>
+                    <p><strong>Contact:</strong> Come and see why this property stands out!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="ayetoroModal" tabindex="-1" aria-labelledby="ayetoroModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="ayetoroModalLabel">Ayetoro Lekki Expressway Property</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>The Ayetoro Lekki Expressway property is strategically located near several major developments, including:</p>
+
+        <h6>Nearby Developments</h6>
+        <ul>
+          <li><strong>Lekki-Epe International Airport:</strong> A 3,500-hectare airport project designed to accommodate 5 million passengers annually, with the first phase estimated at $900 million.</li>
+          <li><strong>Lekki Free Trade Zone:</strong> A strategic location near the airport, expected to boost economic growth and provide crucial support to emerging industries.</li>
+          <li><strong>Dangote Refinery:</strong> A major project located near the airport, contributing to the region's economic growth.</li>
+          <li><strong>Alaro City:</strong> A development adjacent to the airport, expected to benefit from the airport's operations.</li>
+          <li><strong>Eko City Park and Gardens Estate:</strong> Strategically positioned to benefit from the airport's development, with property values expected to experience a positive upswing.</li>
+        </ul>
+
+        <h6>Investment Potential</h6>
+        <p>
+          The proximity to these developments makes the Ayetoro Lekki Expressway property an attractive investment opportunity, 
+          with potential for significant returns and appreciation in property value.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- loader  -->
+    <div id="loader"></div>
+    <!-- Header -->
+    <div id="page-content" style="display: none">
+        <!-- heading  -->
+        <div class="container-fluid services2" id="our-service">
+            <header class="other-header">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="index.html"><img src="images/kitablogo.png" alt="logo" /></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarCollapse">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarCollapse">
+                          <ul class="navbar-nav ms-auto">
+                                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li>
+                                <li class="nav-item"><a class="nav-link" href="index.html#our-service">Services</a></li>
+                                <li class="nav-item"><a class="nav-link" href="index.html#media">Media & Advertising</a></li>
+                                <li class="nav-item"><a class="nav-link active" href="land.html">Land Merchandise</a></li>
+                                <li class="nav-item"><a class="nav-link" href="teams.html">Our Team</a></li>
+                                <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+
+            <div class="row">
+                <div class="w-100 px-3 my-4 mx-5">
+                    <h1>
+                        <span class="fw-light">Land </span><span class="fw-bold">Merchandise</span>
+                    </h1>
+                    <p style="font-size: 12px">
+                        <span class="fw-light">Home</span>
+                        <span class="fw-light" style="color: #9cff01">• Land Merchandise</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pricinng  -->
+
+
+
+        <!-- Pictures-->
+        <div class="container px-4 pt-2 pb-4" id="custom-cards">
+            <div class="pricing-header px-3 py-1 pt-md-4 pb-md-2 mx-auto text-center">
+                <p class="lead fw-bold">
+                    Don't miss out on this unique chance to own a piece of Lagos's most
+                    coveted waterfront property.
+                </p>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 py-2">
+                <!-- Card 1 -->
+                <div class="col">
+                    <div class="card card-cover overflow-hidden rounded-4 shadow-lg position-relative"
+                        style="height: 400px">
+                        <!-- Google Map iframe as background -->
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d714971.9278496692!2d3.2208889010356874!3d6.595561042400943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8d43ca19ada9%3A0xdde8c88fb84eab11!2sOworonshoki%20105102%2C%20Lagos!5e0!3m2!1sen!2sng!4v1755690016228!5m2!1sen!2sng"
+                            width="100%" height="100%" style="
+                  border: 0;
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  z-index: 0;
+                " allowfullscreen="" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+
+                        <!-- Overlay Content -->
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1 position-relative"
+                            style="z-index: 1; pointer-events: none">
+                            <!-- Disable pointer events -->
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="d-flex align-items-center me-3 bg-dark bg-opacity-50 px-3 py-1 rounded"
+                                    style="pointer-events: auto">
+                                    <!-- Re-enable here -->
+                                    <i class="bi bi-geo-alt-fill me-2"></i>
+                                    <small>Oworonshoki</small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col">
+                    <div class="card card-cover overflow-hidden rounded-4 shadow-lg position-relative"
+                        style="height: 400px">
+                        <!-- Google Map iframe as background -->
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d507455.8277601877!2d3.6239126492791978!3d6.458326481517215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10395691de9240b9%3A0x9f90ac31e4b0e0cf!2sIbeju%20Lekki%2C%20Lagos!5e0!3m2!1sen!2sng!4v1755691612034!5m2!1sen!2sng"
+                            width="100%" height="100%" style="
+                  border: 0;
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  z-index: 0;
+                " allowfullscreen="" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+
+                        <!-- Overlay Content -->
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1 position-relative"
+                            style="z-index: 1; pointer-events: none">
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="d-flex align-items-center me-3 bg-dark bg-opacity-50 px-3 py-1 rounded"
+                                    style="pointer-events: auto">
+                                    <i class="bi bi-geo-alt-fill me-2"></i>
+                                    <small>Ayetoro</small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col">
+                    <div class="card card-cover overflow-hidden rounded-4 shadow-lg position-relative"
+                        style="height: 400px">
+                        <!-- Google Map iframe as background -->
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31717.214239805264!2d3.8342472604859426!3d6.438747232769214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103953c3fbdf51b7%3A0xfcdc00b114259b30!2sEleko%20105101%2C%20Lagos!5e0!3m2!1sen!2sng!4v1755692003811!5m2!1sen!2sng"
+                            width="100%" height="100%" style="
+                  border: 0;
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  z-index: 0;
+                " allowfullscreen="" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+
+                        <!-- Overlay Content -->
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1 position-relative"
+                            style="z-index: 1; pointer-events: none">
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="d-flex align-items-center me-3 bg-dark bg-opacity-50 px-3 py-1 rounded"
+                                    style="pointer-events: auto">
+                                    <i class="bi bi-geo-alt-fill me-2"></i>
+                                    <small>Eleko</small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col">
+                    <div class="card card-cover overflow-hidden rounded-4 shadow-lg position-relative"
+                        style="height: 400px">
+                        <!-- Google Map iframe as background -->
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15858.56290099484!2d3.851142223868126!3d6.440162719273979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103953abebf7d76f%3A0x2eee8351125930f2!2sIberekodo%20105101%2C%20Lagos!5e0!3m2!1sen!2sng!4v1755692570166!5m2!1sen!2sng"
+                            width="100%" height="100%" style="
+                  border: 0;
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  z-index: 0;
+                " allowfullscreen="" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+
+                        <!-- Overlay Content -->
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1 position-relative"
+                            style="z-index: 1; pointer-events: none">
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="d-flex align-items-center me-3 bg-dark bg-opacity-50 px-3 py-1 rounded"
+                                    style="pointer-events: auto">
+                                    <i class="bi bi-geo-alt-fill me-2"></i>
+                                    <small>Iberekodo</small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="album py-5 bg-body-tertiary">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <!-- Replace SVG with video -->
+                            <video class="card-vid-top" width="100%" height="225" poster="images/logo-poster.jpeg" controls muted>
+                                <source src="videos/video1.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Prime Land Lekki-Epe Expressway, Iberekodo
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <!-- Trigger Modal -->
+                                        <a href="#" class="small" data-bs-toggle="modal"
+                                            data-bs-target="#iberekodoModal">
+                                            Read More <i class="bi bi-arrow-up-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <!-- Replace SVG with video -->
+                            <video class="card-vid-top" width="100%" height="225" poster="images/logo-poster.jpeg" controls muted>
+                                <source src="videos/video2.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Sea-view Property Oworonshoki
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <!-- Trigger Modal -->
+                                        <a href="#" class="small" data-bs-toggle="modal"
+                                            data-bs-target="#propertyModal1">
+                                            Read More <i class="bi bi-arrow-up-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                        <div class="col">
+                        <div class="card shadow-sm">
+                            <!-- Replace SVG with video -->
+                            <video class="card-vid-top" width="100%" height="225" poster="images/logo-poster.jpeg" controls muted>
+                                <source src="videos/video3.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Ayetoro Lekki Expressway property, Ayetoro
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <!-- Trigger Modal -->
+                                        <a href="#" class="small" data-bs-toggle="modal"
+                                            data-bs-target="#ayetoroModal">
+                                            Read More <i class="bi bi-arrow-up-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+             <div class="pricing-header mt-4 px-3 pt-md-2 pb-md-2 mx-auto text-center">
+                <p class="fw-semibold small text-light-emphasis" style="line-height: 1.7;">
+                    <span class="fw-bold" style="color: #8fd400;">Documents our company can process for you at your
+                        convenience:</span><br>
+                    Certificate of Occupancy, Survey Plan & Approval, Architectural Drawing, Electrical & Mechanical
+                    Drawing,<br>
+                    Deed of Assignment, LUPAR Report, Soil Test, NTDA 10.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- Footer -->
+        <div class="container-fluid footer-container mt-2" id="footer">
+            <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 px-5 border-top text-white">
+                <div class="col mb-3">
+                    <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none"
+                        aria-label="Bootstrap">
+                        <img src="images/kitablogo.png" alt="" class="footer-logo" />
+                    </a>
+                    <p class="text-white fw-normal">
+                        Quality Services Delivery and Customer Satisfaction
+                    </p>
+                    <div class="social-icons mt-3">
+                        <a href="#" class="me-2" title="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="me-2" title="Twitter"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="me-2" title="Instagram"><i class="bi bi-instagram"></i></a>
+                    </div>
+                    <p class="text-white small mt-5 small">
+                        Copyright © 2025 All Rights Reserved.
+                    </p>
+                </div>
+                <div class="col mb-3"></div>
+                <div class="col mb-3">
+                    <h5>Quick Link</h5>
+                    <ul class="nav flex-column small">
+                        <li class="nav-item mb-2">
+                            <a class="nav-link p-0 text-white" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a class="nav-link p-0 text-white" href="index.html#about-us">About Us</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a class="nav-link p-0 text-white" href="index.html#our-service">Services</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a class="nav-link p-0 text-white" href="index.html#media">Media & Advertising</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a class="nav-link p-0 text-white" href="index.html#land">Land Merchandise</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a class="nav-link p-0 text-white" href="index.html#team">Our Team</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col mb-3">
+                    <h5>Security</h5>
+                    <ul class="nav flex-column small">
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-white">Terms & Condition</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-white">Privacy Policy</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-white">Help</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a class="nav-link p-0 text-white" href="#footer">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col mb-3">
+                    <h5>Contact</h5>
+                    <ul class="nav flex-column small">
+                        <li class="nav-item mb-2"><a href="tel:09060064364" class="nav-link p-0 text-white">0906 006 4364</a></li>
+                    <li class="nav-item mb-2"><a href="tel:09059090659" class="nav-link p-0 text-white">0905 909 0659</a></li>
+                    <li class="nav-item mb-2"><a href="tel:09059090828" class="nav-link p-0 text-white">0905 909 0828</a></li>
+                    <li class="nav-item mb-2"><a href="tel:09059090757" class="nav-link p-0 text-white">0905 909 0757</a></li>
+                    <li class="nav-item mb-2"><a href="tel:09059090813" class="nav-link p-0 text-white">0905 909 0813</a></li>
+                        <li class="nav-item mb-2">
+                            <a href="mailto:info@kitabservices.com"
+                                class="nav-link p-0 text-white">info@kitabservices.com</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="https://www.kitabservices.com/" class="nav-link p-0 text-white">www.kitabservices.com</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-white">
+                                1 Ogunnusi Rd Opp Excellent hotel Ogba Lagos</a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <div class="floating-button-group">
+        <!-- Arrow Up Button -->
+        <button id="scrollToTopBtn" aria-label="Scroll to top" class="scroll-top-btn">
+            <i class="bi bi-arrow-up"></i>
+        </button>
+
+        <!-- WhatsApp Button -->
+        <button id="whatsapp-btn">
+            <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" alt="WhatsApp" />
+        </button>
+    </div>
+
+    <!-- Optional WhatsApp Chat Box (popup) -->
+    <div id="chat-box" class="chat-box" style="display: none">
+        <p>👋 Hi! How can we help you?</p>
+        <a href="https://wa.me/2349060064364" target="_blank">Start Chat on WhatsApp</a>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <script src="scripts/testimonial.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/ads.js"></script>
+
+    <script>
+        const scrollBtn = document.getElementById("scrollToTopBtn");
+
+        // Show button when scrolled down
+        window.onscroll = () => {
+            if (window.scrollY > 300) {
+                scrollBtn.style.display = "block";
+            } else {
+                scrollBtn.style.display = "none";
+            }
+        };
+
+        // Scroll to top on click
+        scrollBtn.onclick = () => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        };
+    </script>
+    <script>
+        const video = document.querySelector(".card-vid-top");
+        video.muted = true;
+    </script>
+</body>
+
+</html>

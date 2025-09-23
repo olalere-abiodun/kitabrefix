@@ -68,7 +68,7 @@
 }
 .services .service-icon i {
   font-size: 36px;
-  color: var(--contrast-color);
+  color: #ffffff;
   transition: transform 0.3s ease;
 }
 
@@ -233,4 +233,143 @@
 
 @media (max-width: 767px) {
  
+}
+
+/* why choose us  */
+
+.why-choose-us {
+  padding: 40px 0;
+  background-color: #ffffff;
+}
+
+.why-choose-us .features-content {
+  padding-right: 30px;
+}
+
+.why-choose-us .features-content .lead {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  color: var(--default-color);
+}
+
+.why-choose-us .features-content p {
+  margin-bottom: 2rem;
+  color: #444d4d;
+}
+
+.why-choose-us .features-content .features-list .feature-item {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.why-choose-us .features-content .features-list .feature-item:last-child {
+  margin-bottom: 0;
+}
+
+.why-choose-us .features-content .features-list .feature-item .feature-icon {
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  background-color: color-mix(in srgb, #9cff01, transparent 90%);
+  color: #9cff01 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  margin-right: 20px;
+  transition: all 0.3s ease;
+}
+
+.why-choose-us .features-content .features-list .feature-item .feature-icon:hover {
+  background-color: #9cff01;
+  color: #ffffff !important;
+  transform: translateY(-5px);
+}
+
+.why-choose-us .features-content .features-list .feature-item .feature-text h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #1b2c01;
+}
+
+.why-choose-us .features-content .features-list .feature-item .feature-text p {
+  font-size: 0.95rem;
+  margin-bottom: 0;
+  color: #000000;
+}
+
+.why-choose-us .features-image {
+  position: relative;
+}
+
+.why-choose-us .features-image .main-image {
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1;
+}
+
+.why-choose-us .features-image .stats-card {
+  position: absolute;
+  top: -30px;
+  left: -30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  z-index: 2;
+  width: 220px;
+}
+.why-choose-us .features-image .stats-card .stat-item {
+  text-align: center;
+}
+
+.why-choose-us .features-image .stats-card .stat-item h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1b2c01;
+  margin-bottom: 5px;
+}
+
+.why-choose-us .features-image .stats-card .stat-item p {
+  font-size: 0.8rem;
+  margin-bottom: 0;
+  color: #1b2c01;
+}
+
+.why-choose-us .features-image .experience-badge {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  background-color: #9cff01;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+
+.why-choose-us .features-image .experience-badge .badge-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.why-choose-us .features-image .experience-badge .badge-content .number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.why-choose-us .features-image .experience-badge .badge-content .text {
+  font-size: 0.9rem;
+  text-align: center;
+  line-height: 1.2;
 }

@@ -33,9 +33,9 @@ a {
 }
 
 
-.other-header {
-  padding: 10px 25px 5px 25px;
-}
+/* .other-header {
+  padding: 10px 25px 0px 25px;
+} */
 
 
 .navbar-brand img {
@@ -160,12 +160,6 @@ a {
   margin: auto;
 }
 
-
-
-.carousel-caption h1 {
-  font-size: 2.5rem;
-  font-weight: 600;
-}
 
 .carousel-caption p {
   max-width: 700px;
@@ -439,7 +433,7 @@ footer {
   }
 
   .carousel-caption h1 {
-    font-size: 1.6rem;
+    font-size: 24px !important;
     line-height: 1.3;
   }
 
@@ -469,7 +463,7 @@ footer {
   .media-container {
     min-height: auto;
     height: auto;
-    padding: 2rem 0;
+    padding: 0 0;
     background-position: center;
   }
 

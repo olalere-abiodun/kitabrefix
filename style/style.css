@@ -33,10 +33,6 @@ a {
 }
 
 
-/* .other-header {
-  padding: 10px 25px 0px 25px;
-} */
-
 
 .navbar-brand img {
   max-height: 60px; 
@@ -93,7 +89,7 @@ a {
   padding: 20px;
 }
 .dropdown:hover ul {
-  /* position: absolute; */
+
   display: inline-block;
 }
 
@@ -348,6 +344,9 @@ footer {
   .carousel-item {
     min-height: 30vh;
   }
+   .carousel-services {
+  margin-top: 50px;
+}
   .carousel-caption {
     padding-top: 50px;
     margin-bottom: 2rem;
@@ -423,9 +422,11 @@ footer {
   }
 
   .carousel-item {
-    min-height: 60vh;
-    padding-top: 10px; 
+    min-height: 500px;
   }
+   .carousel-services {
+  margin-top: 30px;
+}
 
   .carousel-caption {
     padding-top: 40px;

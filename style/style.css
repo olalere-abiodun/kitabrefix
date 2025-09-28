@@ -444,12 +444,11 @@ footer {
   }
   .toggle-dropdown {
     color: #ebebeb;
-  margin-left: 200px;
+  margin-left: 180px;
   height: 20px;
   width: 20px;
   padding: 10px;
-  border-radius: 50%;
-  background-color: #9eff013f;
+ 
   overflow: hidden;
 }
 .navbar-nav li ul {
@@ -489,7 +488,8 @@ footer {
     padding: 1rem;
   }
 .service-container{
-  min-height: 1390px;
+  min-height: 1400px;
+  padding-bottom: 20px;
   margin-bottom: 20px;
 }
 

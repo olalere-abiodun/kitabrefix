@@ -1,5 +1,5 @@
-// Collapse navbar on nav link click (mobile)
-document.querySelectorAll('.navbar-collapse .nav-link').forEach(link => {
+// Collapse navbar on nav link click (mobile) — exclude dropdown toggles
+document.querySelectorAll('.navbar-collapse .nav-link:not(.dropdown-toggle)').forEach(link => {
   link.addEventListener('click', () => {
     const navbarCollapse = document.querySelector('.navbar-collapse');
     if (navbarCollapse.classList.contains('show')) {
@@ -8,8 +8,9 @@ document.querySelectorAll('.navbar-collapse .nav-link').forEach(link => {
   });
 });
 
+
 // Smooth scroll for anchor links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+document.querySelectorAll('a[href^="#"]:not([href="#"])').forEach(anchor => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
     const target = document.querySelector(this.getAttribute("href"));
@@ -19,67 +20,55 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// Loader display on page load
-// window.addEventListener('load', function () {
-//   const loader = document.getElementById('loader');
-//   const content = document.getElementById('page-content');
 
-//   loader.style.display = 'none';
-//   content.style.display = 'block';
-// });
-
-// Show loader early during DOM load
-// document.addEventListener('DOMContentLoaded', function () {
-//   document.getElementById('loader').style.display = 'flex';
-// });
-
+// Loader handling (wait for hero background image)
 document.addEventListener('DOMContentLoaded', function () {
   const loader = document.getElementById('loader');
   const content = document.getElementById('page-content');
   
-  // Path to your hero background image
-  const heroBg = new Image();
-  heroBg.src = "images/carousel2.jpg"; 
+  if (loader && content) {
+    const heroBg = new Image();
+    heroBg.src = "images/carousel2.jpg"; 
 
-  // If the image is already cached
-  if (heroBg.complete) {
-    loader.style.display = 'none';
-    content.style.display = 'block';
-  } else {
-    // Wait until it loads
-    heroBg.onload = function () {
+    if (heroBg.complete) {
       loader.style.display = 'none';
       content.style.display = 'block';
-    };
+    } else {
+      heroBg.onload = function () {
+        loader.style.display = 'none';
+        content.style.display = 'block';
+      };
+    }
   }
 });
-
 
 
 // WhatsApp popup toggle
 const whatsappBtn = document.getElementById('whatsapp-btn');
 const chatBox = document.getElementById('chat-box');
 
-whatsappBtn.addEventListener('click', () => {
-  chatBox.style.display = chatBox.style.display === 'block' ? 'none' : 'block';
-});
+if (whatsappBtn && chatBox) {
+  whatsappBtn.addEventListener('click', (e) => {
+    e.stopPropagation(); // prevent closing immediately
+    chatBox.style.display = chatBox.style.display === 'block' ? 'none' : 'block';
+  });
 
-// Optional: close WhatsApp chat when clicked outside
-document.addEventListener('click', function (e) {
-  if (!document.getElementById('whatsapp-chat-popup').contains(e.target) && e.target.id !== 'whatsapp-btn') {
-    chatBox.style.display = 'none';
-  }
-});
+  // Close WhatsApp chat when clicking outside
+  document.addEventListener('click', function (e) {
+    if (!chatBox.contains(e.target) && e.target.id !== 'whatsapp-btn') {
+      chatBox.style.display = 'none';
+    }
+  });
+}
 
 
-
-// Highlight 
-
+// Highlight active nav link on scroll
 const sections = document.querySelectorAll("section[id], div[id]");
 const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
 
 window.addEventListener("scroll", () => {
   let scrollPos = window.scrollY + 150;
+
   sections.forEach((section) => {
     if (
       scrollPos >= section.offsetTop &&
@@ -94,4 +83,3 @@ window.addEventListener("scroll", () => {
     }
   });
 });
-

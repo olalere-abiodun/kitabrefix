@@ -29,6 +29,27 @@
       <changefreq>weekly</changefreq>
    </url>
 
+   <!-- Media -->
+   <url>
+      <loc>https://www.kitabservices.com/media</loc>
+      <priority>0.8</priority>
+      <changefreq>weekly</changefreq>
+   </url>
+
+   <!-- Tax -->
+   <url>
+      <loc>https://www.kitabservices.com/tax</loc>
+      <priority>0.9</priority>
+      <changefreq>weekly</changefreq>
+   </url>
+
+   <!-- business -->
+   <url>
+      <loc>https://www.kitabservices.com/business</loc>
+      <priority>0.9</priority>
+      <changefreq>weekly</changefreq>
+   </url>
+
    <!-- Teams -->
    <url>
       <loc>https://www.kitabservices.com/teams</loc>

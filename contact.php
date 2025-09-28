@@ -20,25 +20,37 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 ?>
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
+    <title>KITAB Services | Business Consulting, Advertising & Property in Lagos</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-     <title>Contact Us | KITAB</title>
-
     <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="preload" as="image" href="images/carousel2.jpg">
+    <meta name="description"
+        content="KITAB Services helps businesses in Lagos grow with expert business consulting, property acquisition, advertising, brand marketing, and government compliance solutions.">
+    <link rel="canonical" href="https://www.kitabservices.com/">
+    <meta name="keywords"
+        content="KITAB, K.I.T.A.B, kitabservices, Kitab services, Business Consulting, Advertising, Property Acquisition, Lagos Business Services, Marketing Solutions, Business Setup, Tax Registration, Brand Marketing, Land Merchandise, Media Advertising, Business Growth, Customer Satisfaction">
+    <meta name="author" content="KITAB Services">
+    <meta content="google-site-verification" name="google-site-verification">
+
+
+
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="preload" as="image" href="images/carouselbg.png">
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/testimonial.css">
-    <link rel="stylesheet" href="style/loader.css">
+    <link rel="stylesheet" href="style/style.css?v=2">
+    <link rel="stylesheet" href="style/testimonial.css?v=2">
+    <link rel="stylesheet" href="style/loader.css?v=2">
+    <link rel="stylesheet" href="style/main.css">
 
     <style>
 
@@ -46,59 +58,671 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 
 <body>
-
     <!-- loader  -->
     <div id="loader"></div>
     <!-- Header -->
     <div id="page-content" style="display: none;">
-
-<!-- heading  -->
-        <div class="container-fluid services2" id="our-service">
-            <header class="other-header">
-                <nav class="navbar navbar-expand-md">
+        <div class="header">
+            <header class="index-header">
+                <nav class="navbar navbar-expand-lg">
                     <div class="container-fluid">
-                        <a class="navbar-brand" href="#"><img src="images/kitablogo.png" alt="logo"></a>
+                        <!-- Logo -->
+                        <a class="navbar-brand" href="index.html">
+                            <img src="images/kitablogo.png" alt="logo">
+                        </a>
+
+                        <!-- Toggler -->
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarCollapse">
+                            data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                            aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
+
+                        <!-- Navbar Links -->
                         <div class="collapse navbar-collapse" id="navbarCollapse">
-                           <ul class="navbar-nav ms-auto">
-                                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                                <li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li>
-                                <li class="nav-item"><a class="nav-link" href="index.html#our-service">Services</a></li>
-                                <li class="nav-item"><a class="nav-link" href="index.html#media">Media & Advertising</a></li>
-                                <li class="nav-item"><a class="nav-link" href="land.html">Land Merchandise</a></li>
-                                <li class="nav-item"><a class="nav-link" href="teams.html">Our Team</a></li>
-                                <li class="nav-item"><a class="nav-link active" href="contact-us.html">Contact Us</a></li>
+                            <ul class="navbar-nav ms-auto">
+                                <!-- Home -->
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                </li>
+
+                                <!-- About -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about-us.html">About Us</a>
+                                </li>
+
+                                <!-- Dropdown -->
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Our Business
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="business.html">Business Setup</a></li>
+                                        <li><a class="dropdown-item" href="media.html">Marketing & Advertising</a></li>
+                                        <li><a class="dropdown-item" href="tax.html">Tax & Regulatory Compliance</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="land.html">Real Estate</a></li>
+                                    </ul>
+                                </li>
+
+                                <!-- Team -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="teams.html">Our Team</a>
+                                </li>
+
+                                <!-- Contact -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#contact-us">Contact Us</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
                 </nav>
+
             </header>
+            <!-- Carousel -->
+            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
 
-            <div class="row">
+                        <div class="carousel-caption">
+                            <h1>Your Business Companion, <br> for Accelerated Growth</h1>
+                            <p class="mt-3">
+                                We offer a stealth partnership with a full suite of business solutions, designed to
+                                fast-track your enterprise's growth.
+                            </p>
+                            <a href="#about-us"><img src="./svg/Link.svg" alt="" class="mt-4"></a>
+                        </div>
+                        <div class="row text-white g-3 mb-1 justify-content-center carousel-services">
+                            <div class="col-12 col-sm-6 col-md-3">
+                                <img src="svg/SVG.svg" alt="" class="me-2"> Business Setup
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-3">
+                                <img src="svg/SVG.svg" alt="" class="me-2"> Marketing & Advertising
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-3">
+                                <img src="svg/SVG.svg" alt="" class="me-2"> Taxes & Regulatory compliance
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-3">
+                                <img src="svg/SVG.svg" alt="" class="me-2"> Real Estate
+                            </div>
+                        </div>
 
-                <div class="w-100 px-3 my-4 mx-5">
-                    <h1>
-                        <span class="fw-light">Contact </span><span class="fw-bold">Us</span>
-                    </h1>
-                    <p style="font-size: 12px;">
-                        <span class="fw-light">Home</span> <span class="fw-light" style="color: #9cff01;">• Contact
-                            Us</span>
-                    </p>
+                    </div>
                 </div>
             </div>
         </div>
 
+        <!-- About Section -->
+        <div class="container-fluid py-5 about" id="about-us">
+            <div class="row">
+                <!-- Left Image Stack -->
+                <div class="col-md-6 d-none d-md-block" data-aos="fade-right" data-aos-delay="100">
+                    <img src="images/about-us.jpg" alt="" class="mg-fluid rounded shadow ms-4 about-img">
+                </div>
+
+                <!-- Right Content -->
+                <div class="col-md-6 about2" data-aos="fade-left" data-aos-delay="200">
+                    <div class="w-100 px-5">
+                        <div class="d-flex align-items-center mb-3" data-aos="fade-up" data-aos-delay="300">
+                            <img src="svg/Image.svg" class="me-3" alt="">
+                            <h4 class="mb-0">About Us</h4>
+                        </div>
+
+                        <p class="mt-3 description" style="text-align: justify;">
+                            K.I-T.A.B Service Limited is a solutions-driven firm dedicated to simplifying and
+                            accelerating business growth in Nigeria. We help entrepreneurs, startups, and enterprises
+                            navigate challenges such as regulatory compliance, tax registration, marketing, and real
+                            estate opportunities.
+                        </p>
+
+                        <p class="mt-3 description" style="text-align: justify;">
+                            Our mission is to empower businesses to launch and scale with confidence by removing
+                            administrative burdens and unlocking access to valuable government services and assets. With
+                            strong local partnerships, deep regulatory expertise, and modern digital tools, we transform
+                            complex processes into seamless, result-driven experiences.
+                        </p>
+                        <p class="mt-3 description" style="text-align: justify;">
+                            At K.I-T.A.B, we don’t just consult — we represent you, ensuring your business moves from
+                            idea to operation with speed, efficiency, and compliance.
+                        </p>
+                        <a href="about-us.html" class="small">Read More <i class="bi bi-arrow-up-right"></i></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- our Services section  -->
+        <div class="container-fluid services" id="our-service">
+            <div class="row">
+
+                <div class="col-md-6 px-4">
+                    <div class="w-100 px-3 px-md-4 px-lg-5 my-3 my-md-4 my-lg-5 mx-2 mx-md-4 mx-lg-5">
+                        <div class="mb-3">
+                            <div class="d-flex align-items-center" data-aos="fade-up" data-aos-delay="300">
+                                <img src="svg/Image.svg" class="me-2" alt="">
+                                <h4 class="mb-0">Our Services</h4>
+                            </div>
+                        </div>
+
+                        <h4 class="">
+                            <span class="fw-light">Quality Service Delivery &</span><br>
+                            <span class="fw-bold">Customer Satisfaction</span>
+                        </h4>
+                    </div>
+                </div>
+
+
+                <!-- Right Content -->
+                <div class="col-md-6 d-flex flex-column justify-content-center align-items-center px-4">
+                    <div class="w-100 px-2 px-md-3 px-lg-4 my-3 my-md-4 my-lg-5">
+
+                        <p class="mt-2 font-weight-light" style="font-size: 14px; text-align: justify;">
+                            At K.I-T.A.B, we offer strategic problem-solving
+                            services that help organizations overcome obstacles,
+                            unlock growth, and drive innovation. Whether you're
+                            facing issues of branding you business, Advetising
+                            your product and services to the rigth market, Tax
+                            Issues, legitimate Land to use for your business, or
+                            complex strategic decisions, we bring clarity, structure,
+                            and solutions.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="container-fluid service-container">
+            <section id="featured-services" class="featured-services section light-background">
+
+                <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+                    <div class="row g-3">
+
+                        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                            <div class="service-item">
+                                <div class="service-icon">
+                                    <i class="bi bi-buildings"></i>
+                                </div>
+                                <h3>Business Setup</h3>
+                                <p>Entering into a new market is challenging, but not with <b>K.I-T.A.B Services</b>. We
+                                    provide the expertise and support you need to launch and scale seamlessly in
+                                    Nigeria’s dynamic business landscape.
+                                </p>
+                                <a href="business.html" class="service-link">
+                                    <span>Explore Service</span>
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div><!-- End Service Item -->
+
+                        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                            <div class="service-item">
+                                <div class="service-icon">
+                                    <i class="bi bi-megaphone"></i>
+
+
+                                </div>
+                                <h3>Marketing & Advertising</h3>
+                                <p><b>K.I-T.A.B Digital</b> serves as a comprehensive out-of-home (OOH) media placement
+                                    agency,
+                                    helping businesses elevate their visibility across multiple formats.
+                                </p>
+                                <a href="media.html" class="service-link">
+                                    <span>Explore Service</span>
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div><!-- End Service Item -->
+
+                        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                            <div class="service-item">
+                                <div class="service-icon">
+                                    <i class="bi bi-shield-check"></i>
+
+                                </div>
+                                <h3>Taxes & Regulatory Compliance</h3>
+                                <p>With K.I-T.A.B Services, our goal is to help you focus on business growth while we
+                                    expertly manage Tax Obligations, Filings, and Regulatory Requirements seamlessly.
+                                </p>
+                                <a href="tax.html" class="service-link">
+                                    <span>Explore Service</span>
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div><!-- End Service Item -->
+
+                        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                            <div class="service-item">
+                                <div class="service-icon">
+                                    <i class="bi bi-house"></i>
+
+                                </div>
+                                <h3>Real Estate</h3>
+                                <p>At K.I-T.A.B Real Estate we provide end-to-end real estate support designed to give
+                                    clients confidence in every transaction.</p>
+                                <a href="land.html" class="service-link">
+                                    <span>Explore Service</span>
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div><!-- End Service Item -->
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+        <div class="row featurette">
+
+            <!-- why choose us  -->
+            <section id="why-choose-us" class="why-choose-us section">
+
+                <!-- Section Title -->
+                <div class="container" data-aos="fade-up">
+                    <div class="d-flex align-items-center mb-3" data-aos="fade-up" data-aos-delay="300">
+                        <img src="svg/Image.svg" class="me-3" alt="">
+                        <h4 class="mb-0">Why Choose Us</h4>
+                    </div>
+                </div><!-- End Section Title -->
+
+                <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+                    <div class="row align-items-center">
+                        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                            <div class="features-content">
+                                <h3>Why Choose Our Services</h3>
+                                <p class="lead">At K.I-T.A.B Business Development Services Limited, we are more than
+                                    just a consultancy — we are your strategic partner in growth. Here’s why businesses
+                                    trust us:</p>
+
+                                <div class="features-list">
+                                    <div class="feature-item">
+                                        <div class="feature-icon">
+                                            <i class="bi bi-layers fs-3 text-primary"></i>
+
+                                        </div>
+                                        <div class="feature-text">
+                                            <h4>Comprehensive Solutions</h4>
+                                            <p>From business setup and regulatory compliance to marketing, advertising,
+                                                and real estate, we offer an all-in-one service hub that eliminates the
+                                                need to juggle multiple service providers.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="feature-item">
+                                        <div class="feature-icon">
+                                            <i class="bi bi-building fs-3 text-primary"></i>
+
+                                        </div>
+                                        <div class="feature-text">
+                                            <h4>Deep Expertise</h4>
+                                            <p>With in-depth knowledge of Nigerian business regulations and strong
+                                                partnerships with government agencies, we simplify complex processes,
+                                                saving you time, effort, and unnecessary bureaucracy.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="feature-item">
+                                        <div class="feature-icon">
+                                            <i class="bi bi-award fs-3 text-success"></i>
+                                        </div>
+                                        <div class="feature-text">
+                                            <h4>Proven Track Record</h4>
+                                            <p>Since 2018, we have built a reputation for excellence and reliability,
+                                                serving a diverse client portfolio and consistently delivering tangible
+                                                results.</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                            <div class="features-image">
+                                <div class="stats-card">
+                                    <div class="stat-item">
+                                        <h3><span data-purecounter-start="0" data-purecounter-end="95"
+                                                data-purecounter-duration="1" class="purecounter"></span>%</h3>
+                                        <p>Client Satisfaction</p>
+                                    </div>
+                                    <!-- <div class="stat-item">
+                  <h3><span data-purecounter-start="0" data-purecounter-end="50" data-purecounter-duration="1" class="purecounter"></span>+</h3>
+                  <p>Projects Completed</p>
+                </div> -->
+                                </div>
+                                <img src="images/cboose-us.jpg" alt="" class="img-fluid main-image">
+                                <div class="experience-badge">
+                                    <div class="badge-content">
+                                        <span class="number">5+</span>
+                                        <span class="text">Years of Excellence</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section><!-- /Why Choose Us Section -->
+
+            <div class="col-md-7 order-md-2 my-auto">
+
+                <h3 class="featurette-heading fw-normal lh-1 mx-2">What Our satisfied clients</h3>
+                <h3 class="text-body-secondary mx-2">are saying.</h3>
+
+                <!-- testimonial  -->
+                <div class="testimonial-container">
+                    <div id="testimonialCarousel" class="testimonial-slide" data-bs-ride="carousel">
+                        <div class="testimonial-inner">
+                            <div class="testimonial-item active">
+                                <div class="testimonial-caption">
+                                    <p class="lead">"This company exceeded our expectations with their exceptional
+                                        service!"</p>
+                                    <p><strong>– Idris Abiodun</strong></p>
+                                </div>
+                            </div>
+                            <div class="testimonial-item">
+                                <div class="testimonial-caption">
+                                    <p class="lead">"A fantastic experience, highly recommend their professional
+                                        team."
+                                    </p>
+                                    <p><strong>– Clement Eyitayo</strong></p>
+                                </div>
+                            </div>
+                            <div class="testimonial-item">
+                                <div class="testimonial-caption">
+                                    <p class="lead">"Their attention to detail made all the difference for our
+                                        project."
+                                    </p>
+                                    <p><strong>Abiodun Joy</strong></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Previous button -->
+                        <button class="testimonial-prev custom-prev-btn" type="button"
+                            data-bs-target="#testimonialCarousel" data-bs-slide="prev" aria-label="Previous">
+                            <svg width="80" height="69" viewBox="0 0 80 69" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect x="12" y="12.4099" width="56" height="56" rx="10" fill="#9CFF01" />
+                                <path
+                                    d="M48.2113 39.2544C48.4234 39.4665 48.4901 39.6827 48.4822 39.9735C48.4663 40.555 48.0182 41.0031 47.4367 41.0189L32.8978 41.4156C32.3163 41.4315 31.892 41.0072 31.9079 40.4256C31.9238 39.8441 32.3718 39.396 32.9534 39.3802L47.4922 38.9835C47.783 38.9756 47.9991 39.0423 48.2113 39.2544Z"
+                                    fill="white" />
+                                <path
+                                    d="M40.3932 32.9299C40.8175 33.3542 40.8016 33.9358 40.3536 34.3838L34.3793 40.358L40.0362 46.0149C40.4605 46.4392 40.4446 47.0207 39.9965 47.4688C39.5485 47.9169 38.9669 47.9327 38.5426 47.5085L32.1787 41.1445C31.7544 40.7202 31.7703 40.1387 32.2183 39.6906L38.9394 32.9696C39.3874 32.5216 39.969 32.5056 40.3932 32.9299Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+
+                        <!-- Next button -->
+                        <button class="testimonial-next custom-next-btn" type="button"
+                            data-bs-target="#testimonialCarousel" data-bs-slide="next" aria-label="Next">
+                            <svg width="68" height="69" viewBox="0 0 68 69" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect x="12" y="12.4099" width="56" height="56" rx="10" fill="#9CFF01" />
+                                <g clip-path="url(#clip0_1_1526)">
+                                    <path
+                                        d="M31.7887 41.5554C31.5766 41.3433 31.5099 41.1271 31.5178 40.8364C31.5337 40.2548 31.9818 39.8067 32.5633 39.7909L47.1022 39.3942C47.6837 39.3783 48.108 39.8026 48.0921 40.3842C48.0762 40.9657 47.6282 41.4138 47.0466 41.4297L32.5078 41.8263C32.217 41.8342 32.0009 41.7676 31.7887 41.5554Z"
+                                        fill="white" />
+                                    <path
+                                        d="M39.6068 47.8799C39.1825 47.4556 39.1984 46.874 39.6464 46.426L45.6207 40.4518L39.9638 34.7949C39.5395 34.3706 39.5554 33.7891 40.0035 33.341C40.4515 32.8929 41.0331 32.8771 41.4574 33.3013L47.8213 39.6653C48.2456 40.0896 48.2297 40.6711 47.7817 41.1192L41.0606 47.8402C40.6126 48.2883 40.031 48.3042 39.6068 47.8799Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_1526">
+                                        <rect width="24" height="26" fill="white"
+                                            transform="translate(40.707 22.7302) rotate(45)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+
+            <div class="col-md-5 order-md-1 d-none d-sm-block" style="padding-left: 0 !important;">
+                <div class="client-image-placeholder w-100 h-100"></div>
+            </div>
+
+
+
+        </div>
+
+        <div class="container" id="team">
+            <div class="d-flex justify-content-between align-items-center py-4">
+
+                <div class="d-flex align-items-center" data-aos="fade-up" data-aos-delay="300">
+                    <img src="svg/Image.svg" class="me-2" alt="">
+                    <h4 class="mb-0">Our Team</h4>
+                </div>
+
+
+                <a href="teams.html" class="d-flex align-items-center">
+                    <img src="svg/members.svg" alt="">
+                </a>
+            </div>
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="row gy-4">
+
+                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="member-card">
+                            <div class="member-image-wrapper">
+                                <img src="images/DSC3039.jpg" class="img-fluid" alt="Team Member">
+                            </div>
+                            <div class="member-content">
+                                <h4 class="member-name">MR SAHEED ELIAS AJIBOLA</h4>
+                                <span class="member-role">MARKETING/BUSINESS MANAGER</span>
+
+                            </div>
+                        </div>
+                    </div><!-- End Team Member -->
+
+                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="member-card">
+                            <div class="member-image-wrapper">
+                                <img src="images/DSC3067.jpg" class="img-fluid" alt="Team Member">
+                            </div>
+                            <div class="member-content">
+                                <h4 class="member-name">MR. DAVID OLADIMEJI</h4>
+                                <span class="member-role">IT MANAGER</span>
+
+                            </div>
+                        </div>
+                    </div><!-- End Team Member -->
+
+                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="member-card">
+                            <div class="member-image-wrapper">
+                                <img src="images/DSC3210.jpg" class="img-fluid" alt="Team Member">
+                            </div>
+                            <div class="member-content">
+                                <h4 class="member-name">MR. GBENGA PETERS</h4>
+                                <span class="member-role">CONSULTANT</span>
+                            </div>
+                        </div>
+                    </div><!-- End Team Member -->
+
+                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                        <div class="member-card">
+                            <div class="member-image-wrapper">
+                                <img src="images/DSC3055.jpg" class="img-fluid" alt="Team Member">
+                            </div>
+                            <div class="member-content">
+                                <h4 class="member-name">MISS AYOMIDE RASAQ</h4>
+                                <span class="member-role">ACCOUNT OFFICER</span>
+                            </div>
+                        </div>
+                    </div><!-- End Team Member -->
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+        <section id="clients" class="clients section">
+
+            <div class="container d-flex align-items-center section-title" data-aos="fade-up" data-aos-delay="300">
+                <img src="svg/Image.svg" class="me-3" alt="">
+                <h4 class="mb-0">Our Clients</h4>
+            </div>
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+
+                <div class="row gy-4">
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="client-item">
+                            <img src="svg/jumia.svg" class="img-fluid" alt="Client 1">
+                        </div>
+                    </div><!-- End Client Item -->
+
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="150">
+                        <div class="client-item">
+                            <img src="images/gigg.png" class="img-fluid" alt="Client 2">
+                        </div>
+                    </div><!-- End Client Item -->
+
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="client-item">
+                            <img src="svg/promasidor.svg" class="img-fluid" alt="Client 3">
+                        </div>
+                    </div><!-- End Client Item -->
+
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="250">
+                        <div class="client-item">
+                            <img src="images/alpha.png" class="img-fluid" alt="Client 4">
+                        </div>
+                    </div><!-- End Client Item -->
+
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="client-item">
+                            <img src="svg/car45.svg" class="img-fluid" alt="Client 5">
+                        </div>
+                    </div><!-- End Client Item -->
+
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="350">
+                        <div class="client-item">
+                            <img src="images/autocheck.png" class="img-fluid" alt="Client 6">
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="350">
+                        <div class="client-item">
+                            <img src="svg/xone.svg" class="img-fluid" alt="Client 6">
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="350">
+                        <div class="client-item">
+                            <img src="images/crux.png" class="img-fluid" alt="Client 6">
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="350">
+                        <div class="client-item">
+                            <img src="images/silver.png" class="img-fluid" alt="Client 6">
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="350">
+                        <div class="client-item">
+                            <img src="images/joe.png" class="img-fluid" alt="Client 6">
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="350">
+                        <div class="client-item">
+                            <img src="images/top.png" class="img-fluid" alt="Client 6">
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="350">
+                        <div class="client-item">
+                            <img src="images/tata.png" class="img-fluid" alt="Client 6">
+                        </div>
+                    </div>
+
+                    <!-- End Client Item -->
+
+                </div>
+
+            </div>
+
+        </section>
+        <section id="clients" class="clients section clients-bg">
+
+            <div class="container d-flex align-items-center section-title" data-aos="fade-up" data-aos-delay="300">
+                <img src="svg/Image.svg" class="me-3" alt="">
+                <h4 class="mb-0">Our Regulators</h4>
+            </div>
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+
+                <div class="row gy-4">
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="client-item">
+                            <img src="images/lag.png" class="img-fluid" alt="Client 1">
+                        </div>
+                    </div><!-- End Client Item -->
+
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="150">
+                        <div class="client-item">
+                            <img src="images/arcon.png" class="img-fluid" alt="Client 2">
+                        </div>
+                    </div><!-- End Client Item -->
+
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="client-item">
+                            <img src="images/lgs.png" class="img-fluid" alt="Client 3">
+                        </div>
+                    </div><!-- End Client Item -->
+
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="250">
+                        <div class="client-item">
+                            <img src="images/inalnd.png" class="img-fluid" alt="Client 4">
+                        </div>
+                    </div><!-- End Client Item -->
+
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="client-item">
+                            <img src="images/lasaa.png" class="img-fluid" alt="Client 5">
+                        </div>
+                    </div><!-- End Client Item -->
+
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="350">
+                        <div class="client-item">
+                            <img src="images/lirs.png" class="img-fluid" alt="Client 6">
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
         <!-- contact us section  -->
-        <div class="container-fluid" id="media">
+        <div class="container-fluid" id="contact-us">
             <div class="row align-items-md-stretch about" style="min-height: auto;">
                 <div class="col-md-6">
-                    <div class="h-100 p-5 rounded-3">
-                        <div class="d-flex align-items-center mb-3">
+                    <div class="h-100 p-4 p-md-4 p-sm-3 p-2 rounded-3">
+
+                        <div class="d-flex align-items-center mb-3" data-aos="fade-up" data-aos-delay="300">
                             <img src="svg/Image.svg" class="me-2" alt="">
-                            <h6 class="mb-0">Contact Us</h6>
+                            <h4 class="mb-0">Contact Us</h4>
                         </div>
                         <h2><span class="fw-light">Get in touch</span> <span class="fw-bold">with us</span></h2>
                         <p class="small">Reach out for any inquiries, support, or to discuss how we can
@@ -110,6 +734,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             </div>
                             <div class="col">
                                 <h6 class="mb-0 fw-bold">Contact</h6>
+                                <p class="small mb-0" style="color:#726e6e; font-weight: 500;"><a href="tel:09060064364"
+                                        class="nav-link p-0 text-white">0906 006 4364</a></p>
                                 <p class="small mb-0" style="color:#726e6e; font-weight: 500;">0703 030 7429</p>
                                 <p class="small mb-0" style="color:#726e6e; font-weight: 500;">0905 909 0659</p>
                                 <p class="small mb-0" style="color:#726e6e; font-weight: 500;">0905 909 0828</p>
@@ -142,38 +768,26 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="h-100 p-5">
+                <div class="col-md-6" data-aos="zoom-out-down" data-aos-delay="200">
+                    <div class="h-100 p-4 p-md-4 p-sm-3 p-2">
+
                         <h5><span class="fw-light"> 
                             <?php echo $messageStatus; ?>
                         </h5>
-                        
 
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- map  -->
-        <div class="container-fluid" id="land">
-            <div class="row land">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.0802233987256!2d3.346018516703163!3d6.636959291234558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b9300527789ab%3A0xb9dea3f5b179e551!2sUpdate%20Mall!5e0!3m2!1sen!2sng!4v1752687102358!5m2!1sen!2sng"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-
-            </div>
-        </div>
-
 
         <!-- Footer -->
-        <div class="container-fluid footer-container mt-2" id="footer">
-            <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 px-5 border-top text-white">
+        <div class="container-fluid footer-container" id="footer">
+            <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 pt-5 px-5 border-top text-white">
                 <div class="col mb-3"> <a href="/"
                         class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none"
                         aria-label="Bootstrap"> <img src="images/kitablogo.png" alt="" class="footer-logo"> </a>
-                    <p class="text-white fw-normal">Quality Services Delivery and Customer Satisfaction</p>
+                    <p class="text-white fw-normal">Your Business Companion for Accelerated Growth</p>
                     <div class="social-icons mt-3">
                         <a href="#" class="me-2" title="Facebook"><i class="bi bi-facebook"></i></a>
                         <a href="#" class="me-2" title="Twitter"><i class="bi bi-twitter"></i></a>
@@ -184,48 +798,59 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     </div>
                     <p class="text-white small mt-5 small">Copyright © 2025 All Rights Reserved.</p>
                 </div>
-                <div class="col mb-3"></div>
                 <div class="col mb-3">
-                    <h5>Quick Link</h5>
+                    <h5>Company</h5>
                     <ul class="nav flex-column small">
                         <li class="nav-item mb-2"><a class="nav-link p-0 text-white" href="index.html">Home</a></li>
-                        <li class="nav-item mb-2"><a class="nav-link p-0 text-white" href="index.html#about-us">About Us</a></li>
-                        <li class="nav-item mb-2"><a class="nav-link p-0 text-white" href="index.html#our-service">Services</a>
+                        <li class="nav-item mb-2"><a class="nav-link p-0 text-white" href="about-us.html">About Us</a>
                         </li>
-                        <li class="nav-item mb-2"><a class="nav-link p-0 text-white" href="index.html#media">Media &
-                                Advertising</a></li>
-                        <li class="nav-item mb-2"><a class="nav-link p-0 text-white" href="index.html#land">Land Merchandise</a>
+                        <li class="nav-item mb-2"><a class="nav-link p-0 text-white" href="#our-service">Services</a>
                         </li>
-                        <li class="nav-item mb-2"><a class="nav-link p-0 text-white" href="index.html#team">Our Team</a></li>
+                        <li class="nav-item mb-2"><a class="nav-link p-0 text-white" href="#team">Our Team</a></li>
+                        <li class="nav-item mb-2"><a class="nav-link p-0 text-white" href="#contact-us">Contact Us</a>
+                        </li>
 
                     </ul>
                 </div>
                 <div class="col mb-3">
-                    <h5>Security</h5>
+                    <h5>Our Businesses</h5>
                     <ul class="nav flex-column small">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Terms & Condition</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Privacy Policy</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Help</a></li>
-                        <li class="nav-item mb-2"><a class="nav-link p-0 text-white" href="#footer">Contact Us</a></li>
+                        <li class="nav-item mb-2"><a class="nav-link p-0 text-white" href="media.html">Media &
+                                Advertising</a></li>
+                        <li class="nav-item mb-2"><a class="nav-link p-0 text-white" href="business.html">Business
+                                Setup</a></li>
+                        <li class="nav-item mb-2"><a class="nav-link p-0 text-white" href="tax.html">Tax & Regulatory
+                                Compliance</li>
+                        <li class="nav-item mb-2"><a class="nav-link p-0 text-white" href="land.html">Real Estate</a>
+                        </li>
+
                     </ul>
                 </div>
                 <div class="col mb-3">
-                    <h5>Contact</h5>
+                    <h5>General Enquiries</h5>
                     <ul class="nav flex-column small">
-                        <li class="nav-item mb-2"><a href="tel:09060064364"
-                                class="nav-link p-0 text-white">0906 006 4364</a></li>
-                        <li class="nav-item mb-2"><a href="tel:09059090659"
-                                class="nav-link p-0 text-white">0905 909 0659</a></li>
-                        <li class="nav-item mb-2"><a href="tel:09059090828"
-                                class="nav-link p-0 text-white">0905 909 0828</a></li>
-                        <li class="nav-item mb-2"><a href="tel:09059090757"
-                                class="nav-link p-0 text-white">0905 909 0757</a></li>
-                        <li class="nav-item mb-2"><a href="tel:09059090813"
-                                class="nav-link p-0 text-white">0905 909 0813</a></li>
+                        <li class="nav-item mb-2"><a href="tel:09060064364" class="nav-link p-0 text-white">0906 006
+                                4364</a></li>
+                        <li class="nav-item mb-2"><a href="tel:09059090659" class="nav-link p-0 text-white">0905 909
+                                0659</a></li>
+                        <li class="nav-item mb-2"><a href="tel:09059090828" class="nav-link p-0 text-white">0905 909
+                                0828</a></li>
+                        <li class="nav-item mb-2"><a href="tel:09059090757" class="nav-link p-0 text-white">0905 909
+                                0757</a></li>
+                        <li class="nav-item mb-2"><a href="tel:09059090813" class="nav-link p-0 text-white">0905 909
+                                0813</a></li>
+
+
+                    </ul>
+                </div>
+                <div class="col mb-3">
+                    <h5>Contact Us</h5>
+                    <ul class="nav flex-column small">
+
                         <li class="nav-item mb-2"><a href="mailto:info@kitabservices.com"
                                 class="nav-link p-0 text-white">info@kitabservices.com</a></li>
-                        <li class="nav-item mb-2"><a href="https://www.kitabservices.com/" class="nav-link p-0 text-white">www.kitabservices.com</a>
-                        </li>
+                        <li class="nav-item mb-2"><a href="https://www.kitabservices.com/"
+                                class="nav-link p-0 text-white">www.kitabservices.com</a></li>
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white"> 1 Ogunnusi Rd Opp
                                 Excellent hotel Ogba Lagos</a></li>
 
@@ -261,7 +886,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         crossorigin="anonymous"></script>
     <script src="scripts/testimonial.js"></script>
     <script src="scripts/main.js"></script>
-    <script src="scripts/ads.js"></script>
+    <script src="scripts/newjs.js"></script>
+
+
 
 
     <script>
@@ -282,8 +909,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         };
 
     </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+    <script>
+        new PureCounter();
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+        });
+    </script>
+
 </body>
 
 </html>
-
 

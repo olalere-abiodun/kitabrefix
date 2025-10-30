@@ -48,11 +48,11 @@ a {
 
 .nav-link, .nav-link.active,
 .nav-link[aria-current="page"] {
-  color: #9cff01 !important;
+  color: #a9cb4b !important;
 }
 
-.nav.link:hover {
-  color:#ffffff !important;
+.nav-link:hover {
+  color:#9cff01 !important;
 }
 .nav-link.active:hover,
 .nav-link[aria-current="page"]:hover {
@@ -99,8 +99,8 @@ a {
 .header a, .other-header a {
 
   text-decoration: none;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .carousel-caption h1 {

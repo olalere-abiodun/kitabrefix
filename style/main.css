@@ -13,6 +13,10 @@
   transition: all 0.6s ease-out;
 }
 
+.service-item h3 {
+  font-weight: 900;
+}
+
 .service-item.visible {
   transform: translateY(0); 
   opacity: 1;
@@ -553,10 +557,11 @@ a.filled-button:hover {
 .service-lead {
   font-size: 18px;
   margin-bottom: 20px;
+  line-height: 150%;
 }
 
 .service-badge {
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
 .service-badge span {
